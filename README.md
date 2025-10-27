@@ -32,11 +32,11 @@ Designed for scalability, clarity, and performance, the project follows clean ar
 |------------------------|-------------------------------------|
 | **Backend Framework**  | Spring Boot                         |
 | **Language**           | Java                                |
-| **Database**           | MySQL / PostgreSQL (configurable)   |
-| **Authentication**     | Spring Security + JWT               |
+| **Database**           | PostgreSQL (configurable)           |
+| **Authentication**     | Spring Security                     |
 | **Logging**            | Log4j2                              |
 | **Build Tool**         | Maven                               |
-| **IDE Recommendation** | Spring Tool Suite (STS) / IntelliJ IDEA |
+| **IDE Recommendation** | Spring Tool Suite (STS)             |
 
 ---
 
@@ -69,7 +69,7 @@ ImageProject/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/ImageProject.git
+git clone https://github.com/prithvs/ImageProject.git
 cd ImageProject
 ```
 
@@ -110,7 +110,6 @@ The server will start at: http://localhost:8080
 ```bash
 POST /upload
 Content-Type: multipart/form-data
-Authorization: Bearer <JWT_TOKEN>
 
 Body:
   image: <file>
